@@ -1,0 +1,128 @@
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    border-bottom: 1px solid rgb(206, 200, 200);
+    padding-bottom: 50px;
+}
+
+main .title {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+main .cart {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.cart .cart-item {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px dashed rgb(206, 200, 200);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.cart .cart-item .cart-item-img {
+    width: 12%;
+}
+
+.cart .cart-item .cart-item-info {
+    width: 78%;
+    margin-left: 15px;
+}
+
+.cart-item-info .name {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.cart-item-info .price {
+    margin-top: 15px;
+}
+
+.cart-item-info .quantity {
+    margin-top: 15px;
+}
+
+.cart-item-info .quantity button {
+    outline: none;
+    width: 30px;
+    border: 1px solid rgb(206, 200, 200);
+    background-color: white;
+    color: rgb(189, 184, 184);
+}
+
+.cart-item-info .quantity input {
+    background-color: rgb(226, 225, 225);
+    border: 1px solid rgb(206, 200, 200);
+    text-align: center;
+    outline: none;
+    width: 40px;
+}
+
+.sub-total-price {
+    width: 10%;
+    text-align: right;
+}
+
+.sub-total-price .remove-cart-item {
+    font-size: 30px;
+    margin-bottom: 35%;
+}
+
+.total-price {
+    display: none;
+}
+
+.cart-item ~ .total-price {
+    max-width: 1100px;
+    text-align: right;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 500;
+    display: block;
+}
+
+.price::after,
+.sub-total-price > div:last-child::after,
+.total-price::after {
+    content: "đ";
+}
+
+.total-price::before {
+    content: 'Tổng tiền:';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cart-control{
+    display: none;
+}
+
+.cart-item ~ .cart-control {
+    text-align: right;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+.cart-control a{
+    padding: 10px 30px;
+    background-color: rgb(193, 193, 194);
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    word-spacing: 2px;
+    border: 1px solid rgb(193, 193, 194);
+}
+
+.cart-control a:hover{
+    background-color: white;
+    color: rgb(43, 41, 41);
+}

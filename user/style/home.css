@@ -1,0 +1,247 @@
+.banner {
+    margin-bottom: 40px;
+}
+
+/* new product */
+.new-product .new-product-title,
+.hot-product .hot-product-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.new-product .new-product-title a,
+.hot-product .hot-product-title a {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product .product-item {
+    width: calc((100% / 5) - 30px);
+    margin: 0px 15px;
+    padding-bottom: 50px;
+}
+
+.product .product-item hr {
+    border-bottom: 1px dotted black;
+}
+
+.product .product-item .container-product-item {
+    box-shadow: none;
+    transition: 0.2s;
+}
+
+.product .product-item:hover .container-product-item {
+    box-shadow: 1px 1px 10px;
+}
+
+.product-item .product-item-name a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.product-item:hover .product-item-name a {
+    color: #007bff;
+}
+
+.product-item .product-item-price {
+    color: red;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-item .product-item-btn {
+    z-index: 1;
+    bottom: 0px;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.product-item .product-item-btn a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.product-item:hover .product-item-btn {
+    opacity: 1;
+}
+
+/* modal */
+
+.modal-dialog {
+    max-width: 1000px;
+}
+
+.modal-body-img {
+    width:60%;
+    padding-right: 20px;
+}
+
+.modal-body-info {
+    width: 40%;
+}
+
+.modal-body-info .title {
+    font-size: 20px;
+}
+
+.modal-body-info .product-name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.modal-body-info .product-price {
+    font-size: 20px;
+}
+
+.modal-body-info .product-color div,
+.modal-body-info .product-size div,
+.modal-body-info .product-quantity div {
+    margin-top: 20px;
+}
+
+.modal-body-info .product-color label span,
+.modal-body-info .product-size label span {
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+}
+
+.modal-body-info .product-size label span {
+    padding: 10px 15px 10px 15px;
+}
+
+.modal-body-info .product-color label span:hover,
+.modal-body-info .product-size label span:hover {
+    cursor: pointer;
+}
+
+.modal-body-info .product-color input:checked~label>span,
+.modal-body-info .product-size input:checked~label>span {
+    border-color: rgb(241, 44, 44);
+}
+
+.modal-body-info .product-quantity input {
+    background-color: rgb(206, 200, 200) !important;
+}
+
+.modal-body-info .order {
+    margin-top: 30px;
+}
+
+.modal-body-info .order > button {
+    border: none;
+    order: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.modal-body-info .product-quantity {
+    margin-top: 10px;
+}
+
+.modal-body-info .product-quantity input {
+    width: 45px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(206, 200, 200);
+    text-align: center;
+    outline: none;
+}
+
+.modal-body-info .product-quantity button {
+    outline: none;
+    width: 45px;
+    height: 40px;
+    border: 1px solid rgb(206, 200, 200);
+    background-color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.news .news-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.news-product {
+    width: calc((100% / 4) - 30px);
+}
+
+.news .title-content {
+    padding: 40px 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.news .content {
+    text-align: justify;
+}
+
+.news .content span a {
+    color: brown;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 47.99875em) { 
+    body {
+        width: 95%;
+        margin: auto;
+    }
+
+    .product {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    .product .product-item {
+        width: 180px;
+        flex-shrink: 0;
+    }
+
+    .product .product-item:first-child {
+        margin-left: 0;
+    }
+
+    .product .product-item:last-child {
+        margin-right: 0;
+    }
+
+    .new-product .new-product-title a, 
+    .hot-product .hot-product-title a {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .news .news-title {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .news > div:last-child {
+        flex-direction: column;
+    }
+
+    .news .news-product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 61.99875em) { 
+
+}

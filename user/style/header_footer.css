@@ -1,0 +1,279 @@
+header {
+    z-index: 5;
+    padding: 10px 0;
+}
+
+header .icon-bar {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .menu ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+
+header .menu > ul > li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .menu ul li {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header ul li:hover {
+    background-color: #f5f5f5;
+    color: #f56200;
+}
+
+.parent-menu li:hover a {
+    color: #f56200;
+}
+
+header ul li a,
+header ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.parent-menu > ul {
+    width: 200px;
+    display: none;
+    top: 45px;
+    left: 0;
+}
+
+.parent-menu:hover > ul {
+    display: block;
+}
+
+header .icon a {
+    color: black;
+}
+
+.icon .icon-user {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.icon .icon-user:hover {
+    cursor: pointer;
+}
+
+.icon .icon-search {
+    font-size: 30px;
+}
+
+.icon .icon-search:hover {
+    cursor: pointer;
+}
+
+.icon .icon-cart {
+    font-size: 35px;
+}
+
+.icon .icon-cart .cart-index {
+    top: 25%;
+    right: 30%;
+    font-size: 23px;
+    font-weight: 450;
+    z-index: -1;
+}
+
+.icon-user:hover .icon-user-menu {
+    display: block;
+}
+
+.icon-user .icon-user-menu {
+    top: 39px;
+    right: -1px;
+    display: none;
+    transform-origin: top right;
+    animation: userMenu ease-in 0.25s;
+}
+
+.icon-user .icon-user-menu::before {
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.125) transparent;
+    content: "";
+    top: -19px;
+    right: 5px;
+}
+
+@keyframes userMenu {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.icon-user-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: white;
+    min-width: 135px;
+}
+
+.icon-user-menu ul li a {
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.icon-user-menu ul li:hover a {
+    color: #f56200;
+}
+
+/* search - bar */
+.search-bar {
+    width: 500px;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    right: 0;
+    margin-right: -500px;
+    transition: 1s;
+    z-index: 10;
+}
+
+.search-bar-content {
+    width: 350px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.search-bar-content > div:first-child {
+    font-weight: 450;
+}
+
+.search-bar-content > div:first-child .close {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.search-bar-content > div:first-child .close:hover {
+    cursor: pointer;
+}
+
+.search-bar-content > div:last-child {
+    margin-top: 50px;
+}
+
+.search-bar-content form input {
+    width: 350px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+.search-bar-content form .search-bar-icon {
+    position: absolute;
+    top: 180px;
+    right: 90px;
+    background-color: #f5f5f5;
+    border: none;
+    color: #bfc7c7;
+    outline: none;
+}
+
+.search-product {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(199, 192, 192, 0.4);
+    font-size: 15px;
+}
+
+.search-product .search-content {
+    width: 80%;
+}
+
+.search-product .search-img {
+    width: 20%;
+}
+
+.register-info {
+    margin: 50px 0;
+    
+}
+
+.register-info .input-group {
+    height: 100px;
+    background-color: rgb(221, 217, 217);
+}
+
+.register-info .input-group input {
+    width: 400px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+
+.register-info .input-group button {
+    height: 50px;
+    width: 120px;
+}
+
+.footer {
+    margin: 50px 15px;
+}
+
+.footer > div{
+    width: calc((100% / 4) - 30px);
+}
+
+.footer > div > p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer > div > ul{
+    padding-left: 0;
+}
+
+.footer > div > ul > li{
+    min-height: 40px;
+}
+.footer > div:not(:last-child) > ul{
+    list-style-type: none;
+}
+
+.footer > div:last-child > ul{
+    list-style: inside;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 47.99875em) { 
+    .logo img {
+        width: 70px;
+    }
+    
+    .icon .icon-cart {
+        font-size: 25px;
+    }
+
+    .icon .icon-cart .cart-index {
+        top: 25%;
+        right: 30%;
+        font-size: 17px;
+        font-weight: 450;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 61.99875em) { 
+
+}

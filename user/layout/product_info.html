@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style/product_info.css">
+    <link rel="stylesheet" href="../style/header_footer.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 px-5">
+                <div class="logo">
+                    <img src="../image/banner/logo.png" alt="" width="110px">
+                </div>
+                <div class="menu">
+                    <ul class="d-flex justify-content-around">
+                        <li>Trang chủ</li>
+                        <li class="position-relative parent-menu">
+                            Áo nam <i class="fas fa-caret-down"></i>
+                            <ul class="list-group position-absolute">
+                                <li class="list-group-item"><a href="#">Áo Thun Tay Ngắn</a></li>
+                                <li class="list-group-item"><a href="#">Áo PoLo</a></li>
+                                <li class="list-group-item"><a href="#">Áo thun tay ngắn</a></li>
+                            </ul>
+                        </li>
+                        <li class="position-relative parent-menu">
+                            Quần nam <i class="fas fa-caret-down"></i>
+                            <ul class="list-group position-absolute">
+                                <li class="list-group-item"><a href="#">Quần Jean Nam</a></li>
+                            </ul>
+                        </li>
+                        <li class="position-relative parent-menu">
+                            Phụ kiện <i class="fas fa-caret-down"></i>
+                            <ul class="list-group position-absolute">
+                                <li class="list-group-item"><a href="#">Túi/Balo</a></li>
+                            </ul>
+                        </li>
+                        <li>Kiến thức</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 icon d-flex align-items-center justify-content-around">
+                <div class="icon-user position-relative">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="icon-user-menu position-absolute">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="./login.html">Đăng nhập</a></li>
+                            <li class="list-group-item"><a href="./register.html">Đăng ký</a></li>
+                        </ul>
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">dnguyenvan</a>
+                            </li>
+                            <li class="list-group-item"><a href="./login.html">Đăng xuất</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="icon-search">
+                    <i class="far fa-search"></i>
+                </div>
+                <div class="icon-cart">
+                    <a href="./cart.html"><i class="far fa-shopping-bag position-relative"></i></a>
+                    <div class="position-absolute cart-index">0</div>
+                </div>
+            </div>
+            <!-- search-bar -->
+            <div class="search-bar position-fixed">
+                <div class="search-bar-content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        TÌM KIẾM
+                        <span class="close"><i class="fal fa-times"></i></span>
+                    </div>
+                    <div>
+                        <form action="" method="POST">
+                            <div>
+                                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm...">
+                            </div>
+                            <div class="search-bar-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                        <div>
+                            <div class="d-flex search-product">
+                                <div class="search-content">
+                                    <div>
+                                        ÁO sơ mi
+                                    </div>
+                                    <div>120đ</div>
+                                </div>
+                                <div class="search-img">
+                                    <img src="../image/hot_product/sp10Hot.png" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./home.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">ÁO NAM</a></li>
+            <li class="breadcrumb-item"><a href="#">Áo Thun Tay Ngắn</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="d-flex content">
+            <div class="left-info">
+                <img src="../image/new_product/sp1New.png" alt="" width="100%">
+                <img src="../image/new_product/sp1New.png" alt="" width="100%">
+            </div>
+            <div class="middle-info">
+                <img src="../image/new_product/sp2New.png" alt="" width="100%">
+            </div>
+            <div class="right-info">
+                <div class="product-name">
+                    AP1010 ÁO PHÔNG 28/621
+                </div>
+                <div class="product-price">
+                    285,000₫
+                </div>
+                <hr>
+                <div class="product-color">
+                    <div class="title">
+                        Màu sắc:
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="color" id="color1" value="1" class="form-check-input" hidden>
+                        <label for="color1">
+                            <span class="color-box">Đen</span>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="color" id="color2" value="1" class="form-check-input" hidden>
+                        <label for="color2">
+                            <span class="color-box">Trắng</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-size">
+                    <div class="title">
+                        Size:
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="size" id="size1" value="1" class="form-check-input" hidden>
+                        <label for="size1">
+                            <span class="color-box">L</span>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="size" id="size2" value="1" class="form-check-input" hidden>
+                        <label for="size2">
+                            <span class="color-box">M</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    <div class="title">
+                        Số lượng:
+                    </div>
+                    <div class="btn-group mt-2">
+                        <button type="button" value="-">-</button>
+                        <input type="text" name="quantity" value="1" readonly>
+                        <button type="button" value="+">+</button>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <div class="title">
+                        Mô tả:
+                    </div>
+                    <div class="description">
+                        Anh em tui ở muôn nơi đã sẵn sàng cho một mùa Tết thật bùng nổ yêu đời chưa?
+                        Cùng chuẩn bị Larue lên chuyến tàu yêu đời thôi nào!!
+                    </div>
+                </div>
+                <div class="order">
+                    <button type="button" class="btn-info btn">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="register-info">
+            <div class="input-group justify-content-center align-items-center">
+                <form action="" method="post">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Đăng ký để nhận thông tin">
+                </form>
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-dark">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between footer">
+            <div>   
+                <p>Công Ty</p>
+                <ul>
+                    <li>CÔNG TY SHOP ĐỘC</li>
+                    <li>ĐỊA CHỈ : Số 110 Nhổn, phường Tây Tựu, quận Bắc Từ Liêm, thành phố Hà Nội</li>
+                    <li>Mã Số Doanh Nghiệp: 01D-8004624 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 16/05/2017</li>
+                    <li>SĐT LIÊN HỆ: 0978901995</li>
+                    <li>EMAIL: shopdoc@shopdoc.vn</li>
+                </ul>
+            </div>
+            <div>
+                <p>Chính Sách Khách Hàng</p>
+                <ul>
+                    <li>Hướng dẫn mua hàng</li>
+                    <li>Chính sách đổi hàng</li>
+                    <li>Chính sách vận chuyển</li>
+                    <li>Chính sách bảo mật thông tin</li>
+                    <li>Hình thức thanh toán</li>
+                    <li>Chính sách xử lý khiếu nại </li>
+                </ul>
+            </div>
+            <div>
+                <p>Kết Nối Với Chúng Tôi</p>
+                <span><a href="#"><img src="../image/footer/icon_facebook.png" alt=""></a></span>
+                <span style="margin-left:10px"><a href="#"><img src="../image/footer/icon_instagram.png" alt=""></a></span>
+            </div>
+            <div>
+                <p>Hệ Thống Cửa Hàng</p>
+                <ul>
+                    <li>326 Cầu Giấy - Hà Nội</li>
+                    <li>110 Phố Nhổn - Hà Nội</li>
+                    <li>154 Quang Trung - Hà Đông - Hà Nội</li>
+                    <li>225 Bạch Mai - Hà Nội</li>
+                    <li>49 Chùa Bộc - Hà Nội</li>
+                    <li>131 Cầu Giấy - Hà Nội</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/header_footer.js"></script>
+<script src="../js/quantity.js"></script>
+
+</html>

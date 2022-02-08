@@ -1,0 +1,128 @@
+.notification {
+    position: fixed;
+    left: calc(100% / 2  - 150px);
+    max-width: 300px;
+    z-index: 2;
+    top: -100px;
+    transition: 1s;
+}
+
+header {
+    display: flex;
+    background-color: #31363b;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+}
+
+header .title {
+    font-size: 25px;
+}
+
+header .user {
+    cursor: pointer;
+}
+
+header .user > a {
+    color: #97999b;
+    text-decoration: none;
+}
+
+.user.show > a{
+    color: white;
+}
+
+header .user a i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+main .sidebar {
+    width: 15%;
+    background-color: #1f2225;
+    color: #97999b;
+    height: 100vh;
+    padding-top: 100px;
+    top: 0;
+}
+
+.sidebar .sidebar-menu {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px 5px 15px;
+}
+
+.sidebar .sidebar-menu a {
+    color: #97999b;
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar .sidebar-menu a:hover {
+    color: white;
+}
+
+.sidebar .sidebar-menu .sidebar-menu-icon {
+    margin-right: 7px;
+    font-size: 14px;
+}
+
+.sidebar .sidebar-menu .parent-menu.collapsed .sidebar-menu-arrow {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    transform: rotate(0deg);
+}
+
+.sidebar .sidebar-menu .parent-menu .sidebar-menu-arrow {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+
+
+.sidebar .sidebar-menu .child-menu a {
+    padding: 15px 0px 15px 25px;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar .sidebar-menu .child-menu a:first-child {
+    padding-top: 20px;
+}
+
+.sidebar .sidebar-menu .child-menu a:last-child {
+    padding-bottom: 0;
+}
+
+.sidebar .sidebar-footer {
+    bottom: 0px;
+    padding: 10px 0 10px 15px;
+    background-color: #444546;
+    width: 100%;
+}
+
+.sidebar .sidebar-footer .user-logged {
+    font-size: 18px;
+}
+
+main .main {
+    width: 100%;
+    margin: 90px 15px 0 0;
+    padding: 0 1% 0 16%;
+}
+
+.main .card .card-header {
+    font-size: 20px;
+}

@@ -1,0 +1,121 @@
+/* product-info */
+nav ul li a {
+  text-decoration: none !important;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .left-info {
+  width: 8%;
+  padding: 5px;
+}
+
+.content .left-info img {
+    margin-bottom: 10px;
+}
+
+.content .middle-info {
+  width: 52%;
+  padding: 5px 10px 0 5px;
+}
+
+.content .right-info {
+  width: 37%;
+  padding: 5px 10px 0 60px;
+}
+
+.content .right-info > div {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.product-price {
+  font-size: 20px;
+}
+
+.product-color div,
+.product-size div,
+.product-quantity div {
+    margin-top: 20px;
+}
+
+.product-color label span,
+.product-size label span {
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+}
+
+.product-size label span {
+    padding: 10px 15px 10px 15px;
+}
+
+.product-color label span:hover,
+.product-size label span:hover {
+    cursor: pointer;
+}
+
+.product-color input:checked ~ label > span,
+.product-size input:checked ~ label > span {
+    border-color: rgb(241, 44, 44);
+}
+
+.product-quantity input {
+  background-color: rgb(206, 200, 200) !important;
+}
+
+
+.product-quantity {
+  margin-top: 10px;
+}
+
+.product-quantity input {
+  width: 45px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid rgb(206, 200, 200);
+  text-align: center;
+  outline: none;
+}
+
+.product-quantity button {
+  outline: none;
+  width: 45px;
+  height: 40px;
+  border: 1px solid rgb(206, 200, 200);
+  background-color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+.product-description {
+  margin-top: 20px;
+}
+
+.order {
+  margin-top: 20px;
+}
+
+.order > button {
+  border: none;
+  order: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 50px;
+}
