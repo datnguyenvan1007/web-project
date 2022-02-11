@@ -13,14 +13,20 @@
 <body>
     <header>
         <div class="row">
-            <div class="col-3"></div>
+            <div class="col-3 d-flex">
+                <div class="d-block d-md-none align-self-center icon-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
             <div class="col-6 px-5">
                 <div class="logo">
                     <img src="../image/banner/logo.png" alt="" width="110px">
                 </div>
-                <div class="menu">
+                <div class="menu d-none d-md-block d-lg-block">
                     <ul class="d-flex justify-content-around">
-                        <li>Trang chủ</li>
+                        <li>
+                            <a href="./home.html">Trang chủ</a>
+                        </li>
                         <li class="position-relative parent-menu">
                             Áo nam <i class="fas fa-caret-down"></i>
                             <ul class="list-group position-absolute">
@@ -41,13 +47,15 @@
                                 <li class="list-group-item"><a href="#">Túi/Balo</a></li>
                             </ul>
                         </li>
-                        <li>Kiến thức</li>
+                        <li>
+                            <a href="#">Kiến thức</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-1"></div>
             <div class="col-2 icon d-flex align-items-center justify-content-around">
-                <div class="icon-user position-relative">
+                <div class="icon-user position-relative d-none d-md-block">
                     <i class="fas fa-user-circle"></i>
                     <div class="icon-user-menu position-absolute">
                         <ul class="list-group">
@@ -62,12 +70,76 @@
                         </ul> -->
                     </div>
                 </div>
-                <div class="icon-search">
+                <div class="icon-search d-none d-md-block">
                     <i class="far fa-search"></i>
                 </div>
-                <div class="icon-cart">
-                    <a href="#"><i class="far fa-shopping-bag position-relative"></i></a>
+                <div class="icon-cart position-relative">
+                    <a href="./cart.html"><i class="far fa-shopping-bag "></i></a>
                     <div class="position-absolute cart-index">0</div>
+                </div>
+                <!-- search-bar -->
+                <div class="search-bar position-fixed">
+                    <div class="search-bar-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            TÌM KIẾM
+                            <span class="close"><i class="fal fa-times"></i></span>
+                        </div>
+                        <div>
+                            <form action="" method="POST">
+                                <div>
+                                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm...">
+                                </div>
+                                <div class="search-bar-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </form>
+                            <div>
+                                <div class="d-flex search-product">
+                                    <div class="search-content">
+                                        <div>
+                                            ÁO sơ mi
+                                        </div>
+                                        <div>120đ</div>
+                                    </div>
+                                    <div class="search-img">
+                                        <img src="../image/hot_product/sp10Hot.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- search-bar -->
+            <div class="search-bar position-fixed">
+                <div class="search-bar-content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        TÌM KIẾM
+                        <span class="close"><i class="fal fa-times"></i></span>
+                    </div>
+                    <div>
+                        <form action="" method="POST">
+                            <div>
+                                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm...">
+                            </div>
+                            <div class="search-bar-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                        <div>
+                            <div class="d-flex search-product">
+                                <div class="search-content">
+                                    <div>
+                                        ÁO sơ mi
+                                    </div>
+                                    <div>120đ</div>
+                                </div>
+                                <div class="search-img">
+                                    <img src="../image/hot_product/sp10Hot.png" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,4 +255,5 @@
 <script src="../js/jquery.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/cart.js"></script>
+<script src="../js/header_footer.js"></script>
 </html>

@@ -28,18 +28,22 @@ header .menu ul li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header ul li:hover {
+header ul li:hover{
     background-color: #f5f5f5;
     color: #f56200;
 }
 
-.parent-menu li:hover a {
+.parent-menu li:hover a,
+header > ul > li:hover > a {
     color: #f56200;
 }
 
-header ul li a,
-header ul li a:hover {
+header ul li a {
     color: black;
+}
+
+header ul li a:hover {
+    color: #f56200;
     text-decoration: none;
 }
 
@@ -272,8 +276,20 @@ header .icon a {
         font-weight: 450;
         z-index: -1;
     }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer > div {
+        width: 45%;
+    }
 }
 
-@media only screen and (max-width: 61.99875em) { 
+@media only screen and (min-width: 48em) and (max-width: 61.99875em) { 
+
+}
+
+@media only screen and (min-width: 75em){ 
 
 }

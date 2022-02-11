@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style/userProfile.css">
+</head>
+<body>
+    <div class="container-profile d-flex">
+        <div class="category">
+          <div class="username">
+            <div class="username-icon">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="name">
+              dnguyenvan344
+            </div>
+          </div>
+          <div class="category-list" id="accordion">
+            <div class="category-item">
+              <a class="" data-toggle="collapse" href="#collapseCategoryItemUser" role="button" aria-expanded="true" aria-controls="collapseCategoryItemUser">
+                <div class="category-item-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                Tài khoản của tôi
+              </a>
+              <div class="collapse" id="collapseCategoryItemUser" data-parent="#accordion">
+                  <a href="#">Mật khẩu</a>
+                  <a href="#">Mật khẩu</a>
+              </div>
+            </div>
+            <div class="category-item">
+              <a class="" data-toggle="collapse" href="#collapseMenuRole" role="button" aria-expanded="true" aria-controls="collapseMenuProduct">
+                <div class="category-item-icon">
+                  <i class="fas fa-receipt"></i>
+                </div>
+                Đơn mua
+              </a>
+              <div class="collapse" id="collapseMenuRole" data-parent="#accordion">
+                  
+              </div>
+            </div>
+          </div>
+          <div class="returnHome">
+            <div class="returnHome-icon">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="returnHome-name">
+              <a href="./home.html">Trang chủ</a>
+            </div>
+          </div>
+        </div>
+        <div class="category-content">
+          <div class="title">
+            Hồ Sơ Của Tôi
+            <div>
+              Quản lý thông tin hồ sơ để bảo mật tài khoản
+            </div>
+          </div>
+          <hr>
+          <div class="main">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="username">Tên đăng nhâp:</label>
+                <input type="text" name="username" id="username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" name="fullname" id="fullname" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="text" name="password" id="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" name="phone" id="phone" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" name="address" id="address" class="form-control">
+              </div>
+              <button type="button" class="btn btn-success">Lưu</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

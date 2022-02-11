@@ -1,0 +1,102 @@
+body {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container-profile {
+    width: 70%;
+    margin: 50px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-profile .category {
+    width: 24%;
+    color: black;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+}
+
+.username .username-icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.username .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.category-list,
+.returnHome {
+    margin-top: 50px;
+}
+
+.category-list .category-item {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.returnHome {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category-item > a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.category-item > div {
+    margin-left: 30px;
+}
+
+.category-item > div a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+.category-item .category-item-icon,
+.returnHome .returnHome-icon {
+    margin-right: 10px;
+    color: black;
+}
+
+.returnHome .returnHome-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.container-profile .category-content {
+    width: 74%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.category-content .title {
+    font-size: 20px;
+}
+
+.category-content .title div {
+    font-size: 15px;
+}
+
+.category-content .main {
+    padding: 0 20px;
+}
+
+.category-content .main .form-group .form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.category-content .main button {
+    padding: 7px 20px;
+}
